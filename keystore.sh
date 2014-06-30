@@ -17,7 +17,7 @@ untilEpochSecs=$( date --date="${until}" '+%s');
 currentEpochSecs=$( date '+%s' );
 differenceSecs=$(( untilEpochSecs - currentEpochSecs ));
 DaysToCertExpiration=$((differenceSecs / 86400));
-#echo "We have only $DaysToCertExpiration days left"i
+echo "We have only $DaysToCertExpiration days left"i
 
 if [ ${DaysToCertExpiration} -ge 60 ]; then
 echo "OK - $DaysToCertExpiration days left"
